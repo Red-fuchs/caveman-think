@@ -8,7 +8,7 @@ if [ -z "$T" ]; then
   done
   echo "Global rule files (no skill support): append rules/core.md to ~/.claude/CLAUDE.md, ~/.codex/AGENTS.md, ~/.gemini/GEMINI.md manually."
 else
-  cd "$R"; for f in AGENTS.md CLAUDE.md GEMINI.md CONVENTIONS.md .github/copilot-instructions.md .cursor .clinerules .windsurf .continue; do
+  cd "$R"; for f in AGENTS.md CLAUDE.md GEMINI.md CONVENTIONS.md QWEN.md .goosehints .rules .roo .kilocode .junie .pi .github/copilot-instructions.md .cursor .clinerules .windsurf .continue; do
     mkdir -p "$T/$(dirname "$f")"; [ -e "$T/$f" ] && echo "skip (exists): $f" || { cp -R "$f" "$T/$f"; echo "+ $f"; }
   done
 fi

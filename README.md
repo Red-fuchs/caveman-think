@@ -19,6 +19,12 @@ Observed anecdotally: also makes weaker/free models more focused. No benchmark c
 | Cline / Roo | `.clinerules/caveman-think.md` |
 | Windsurf | `.windsurf/rules/caveman-think.md` |
 | Continue | `.continue/rules/caveman-think.md` |
+| pi coding agent | `skills/caveman-think/` → `~/.pi/agent/skills/` (global) or `.pi/skills/` (project); also reads `AGENTS.md` |
+| Roo / Kilo Code | `.roo/rules/`, `.kilocode/rules/` |
+| Goose | `.goosehints` |
+| Zed | `.rules` |
+| Qwen Code | `QWEN.md` |
+| JetBrains Junie | `.junie/guidelines.md` |
 | Aider | `CONVENTIONS.md` (`aider --read CONVENTIONS.md`) |
 
 Script: `scripts/install.sh` (global skills) or `scripts/install.sh /path/to/project` (copies rule files, never overwrites).
