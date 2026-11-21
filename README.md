@@ -17,14 +17,15 @@ Observed anecdotally: also makes weaker/free models more focused. No benchmark c
 | Cursor | `.cursor/rules/caveman-think.mdc` |
 | GitHub Copilot | `.github/copilot-instructions.md` |
 | Cline / Roo | `.clinerules/caveman-think.md` |
-| Windsurf | `.windsurf/rules/caveman-think.md` |
+| Windsurf / Devin | `.devin/rules/caveman-think.md` (legacy `.windsurf/rules/`) |
 | Continue | `.continue/rules/caveman-think.md` |
 | pi coding agent | `skills/caveman-think/` → `~/.pi/agent/skills/` (global) or `.pi/skills/` (project); also reads `AGENTS.md` |
-| Roo / Kilo Code | `.roo/rules/`, `.kilocode/rules/` |
+| Roo Code | `.roo/rules/` (also reads `AGENTS.md`) |
+| Kilo Code | `.kilo/rules/` (legacy `.kilocode/rules/`) |
 | Goose | `.goosehints` |
-| Zed | `.rules` |
+| Zed | `.rules` (first match wins; falls back to `AGENTS.md`) |
 | Qwen Code | `QWEN.md` |
-| JetBrains Junie | `.junie/guidelines.md` |
+| JetBrains Junie | `AGENTS.md` (legacy `.junie/guidelines.md`) |
 | Aider | `CONVENTIONS.md` (`aider --read CONVENTIONS.md`) |
 
 Script: `scripts/install.sh` (global skills) or `scripts/install.sh /path/to/project` (copies rule files, never overwrites).
